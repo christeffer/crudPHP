@@ -10,25 +10,29 @@
     <div class="form-group">
         <label for="endereco-logradouro" class="col-sm-2 control-label">Logradouro:</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" name="logradouro" id="endereco-logradouro" maxlength="255" value="<?php echo $endereco->logradouro ?>">
+            <input type="text" class="form-control" name="logradouro" id="endereco-logradouro" 
+                maxlength="255" value="<?php echo $endereco->logradouro ?>" required>
         </div>
     </div>       
     <div class="form-group">
         <label for="endereco-bairro" class="col-sm-2 control-label">Bairro:</label>
         <div class="col-sm-4">
-            <input type="text" class="form-control" name="bairro" id="endereco-bairro" maxlength="100" value="<?php echo $endereco->bairro ?>">
+            <input type="text" class="form-control" name="bairro" id="endereco-bairro" 
+                maxlength="100" value="<?php echo $endereco->bairro ?>" required>
         </div>
     </div>    
     <div class="form-group">
         <label for="endereco-cep" class="col-sm-2 control-label">CEP:</label>
         <div class="col-sm-4">
-            <input type="text" class="form-control" name="cep" id="endereco-cep" maxlength="8" value="<?php echo $endereco->cep ?>">
+            <input type="text" class="form-control" name="cep" id="endereco-cep" 
+                maxlength="8" value="<?php echo $endereco->cep ?>" required>
         </div>
     </div>    
     <div class="form-group">
         <label for="endereco-numero" class="col-sm-2 control-label">Número:</label>
         <div class="col-sm-4">
-            <input type="number" class="form-control" name="numero" id="endereco-numero" value="<?php echo $endereco->numero ?>">
+            <input type="number" class="form-control" name="numero" id="endereco-numero" 
+                value="<?php echo $endereco->numero ?>" required>
         </div>
     </div>    
     <div class="form-actions">

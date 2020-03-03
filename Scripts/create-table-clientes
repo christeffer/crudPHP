@@ -1,0 +1,13 @@
+CREATE TABLE `clientes` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`nome` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`data_nascimento` DATE NULL DEFAULT NULL,
+	`cpf` VARCHAR(11) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`rg` VARCHAR(12) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`telefone` VARCHAR(20) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=7
+;

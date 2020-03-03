@@ -23,7 +23,7 @@
         <?php if ( $clientes ) : ?>
             <?php while ( $cliente = $clientes->fetch_object() ) : ?>
                 <tr>
-                    <td><a href="<?php echo HOME_URL . "enderecos/index?cliente_id={$cliente->id}" ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
+                    <td><a href="<?php echo HOME_URL . "enderecos/index?cliente_id={$cliente->id}" ?>" class="btn btn-success"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></a></td>
                     <td><?php echo $cliente->nome ?></td>
                     <td><?php echo date("d/m/Y", strtotime($cliente->data_nascimento)) ?></td>
                     <td><?php echo $cliente->cpf ?></td>
